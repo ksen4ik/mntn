@@ -1,0 +1,362 @@
+@import url('https://fonts.cdnfonts.com/css/chronicle-display');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+
+    list-style: none;
+
+    font-style: normal;
+    line-height: normal;
+    color: #FFFFFF;
+}
+
+
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("assets/fonts/gilroy/Gilroy-Black.eot");
+	src: url("assets/fonts/gilroy/Gilroy-Black.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/gilroy/Gilroy-Black.ttf") format("truetype"),
+		url("assets/fonts/gilroy/Gilroy-Black.woff") format("woff"),
+		url("assets/fonts/gilroy/Gilroy-Black.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+._container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+
+
+.header {
+    width: 100vw;
+    background: #0B1D26;
+}
+.header__container {
+    padding: 60px 80px 200px;
+}
+.header__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+.header__nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+.header__logo {
+    font-family: 'Chronicle Display', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+}
+.header__nav ul {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+.header__nav ul li a {
+    position: relative;
+}
+.header__nav ul li a, .header__account p, .header__social p, .header__info-scroll-text p {
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 700;
+}
+.header__nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #FBD784;
+    transition: width 0.4s;
+}
+.header__account {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.header__slide {
+    display: flex;
+    justify-content: space-between;
+}
+.header__social {
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.header__social svg {
+    width: 24px;
+    height: 24px;
+    transform: rotate(-90deg);
+}
+.header__info {
+    width: 100%;
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.header__info-gold {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.header__info-gold span {
+    width: 72px;
+    height: 2px;
+    background: #FBD784;
+}
+.header__info-gold p {
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #FBD784;
+}
+.header__info h1 {
+    font-size: 88px;
+    font-weight: 600;
+    line-height: 115%;
+    text-transform: capitalize;
+}
+.header__info-scroll-text {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.header__info-scroll-text svg {
+    width: 16px;
+    height: 24px;
+}
+.header__switcher {
+
+}
+
+
+
+.main {
+    width: 100vw;
+    background: #0B1D26;
+}
+.main__container {
+    padding: 200px 228px 100px;
+}
+.main__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
+.main__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+.card-info-block {
+    position: relative;
+    padding: 140px 0px 140px 140px;
+}
+.card-num {
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    width: 100%;
+    max-width: 632px;
+}
+.card-info-gold {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.card-info-gold span {
+    width: 72px;
+    height: 2px;
+    background: #FBD784;
+}
+.card-info-gold p {
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #FBD784;
+}
+.card-info h2 {
+    font-size: 64px;
+    font-weight: 600;
+}
+.card-info p {
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 170%;
+}
+.card-info a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: gap 0.3s;
+}
+.card-info a p {
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FBD784;
+}
+.card-image {
+    width: 100%;
+    max-width: 566px;
+    height: 100%;
+    overflow: hidden;
+}
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.main__card:nth-of-type(2n) .card-info-block {
+    order: 1;
+}
+.main__card:nth-of-type(2n) .card-image {
+    order: 0;
+}
+
+
+
+.footer {
+    width: 100vw;
+    background: #0B1D26;
+}
+.footer__container {
+    padding: 100px 228px;
+}
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.footer-block-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.footer__logo h3 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+}
+.footer__logo p {
+    max-width: 303px;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 170%;
+}
+p.footer__copy {
+    max-width: 350px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 170%;
+    opacity: 0.5;
+}
+.footer-block-right {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+    max-width: 566px;
+}
+.footer__more {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.footer__more h4 {
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #FBD784;
+}
+.footer__more ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.footer__more ul li a {
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 170%;
+}
+
+
+
+/* Hovers only for desktops */
+
+@media screen and (min-width: 1023px) {
+    .header__nav ul li a:hover {
+        color: #FBD784;
+    }
+    .header__nav ul li a:hover::after {
+        width: 100%;
+    }
+    .header__social svg:hover path {
+        fill: #FBD784;
+        cursor: pointer;
+    }
+    .card-info a:hover {
+        gap: 24px;
+    }
+    .footer__more ul li a:hover {
+        opacity: 0.6;
+    }
+}
